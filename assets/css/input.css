@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav .dropdown {
+    @apply opacity-0 h-0 py-0;
+    top: 72px;
+}
+.dropdown ul li.active, .dropdown ul li:hover {
+    @apply border-b border-white-1;
+}
