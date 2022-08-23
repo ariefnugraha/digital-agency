@@ -3,7 +3,7 @@
 
 This template is perfect for you who need agency theme template. This template has feature such as navbar, hero section, stats, work, testimonial, blog, and footer
 
-Design credit by [Srinivas](https://www.figma.com/@srinivas_dezign)
+Design credit by [Srinivas](./preview.png)
 Slicing by Muhammad Arief Nugraha
 
 
