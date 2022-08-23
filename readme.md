@@ -1,5 +1,5 @@
 # Digital Agency Website
-![Preview](https://images4.imagebam.com/06/05/ab/MECDGFY_o.png)
+![Preview](https://raw.githubusercontent.com/ariefnugraha/digital-agency/main/preview.png)
 
 This template is perfect for you who need agency theme template. This template has feature such as navbar, hero section, stats, work, testimonial, blog, and footer
 
