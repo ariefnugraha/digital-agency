@@ -2,10 +2,199 @@
 @tailwind components;
 @tailwind utilities;
 
-nav .dropdown {
-    @apply opacity-0 h-0 py-0;
-    top: 72px;
+@font-face {
+    font-family: 'Wagon-Bold';
+    src: url('../fonts/Wagon-Bold.otf');
 }
-.dropdown ul li.active, .dropdown ul li:hover {
+
+@font-face {
+    font-family: 'Wagon-ExtraLight';
+    src: url('../fonts/Wagon-ExtraLight.otf');
+}
+
+@keyframes circleAnim {
+    0%   {transform: rotate(90deg);}
+  25%  {transform: rotate(180deg);}
+  50%  {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.dropdown ul li.active,
+.dropdown ul li:hover {
     @apply border-b border-white-1;
+}
+
+
+#hero h1 span {
+    @apply relative;
+}
+
+#hero h1 span::before {
+    content: '';
+    width: 110%;
+    height: 112%;
+    background: url(../images/border.svg) no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -7px;
+}
+
+#hero h1 {
+    @apply relative;
+}
+
+#hero h1::after {
+    content: '';
+    display: block;
+    width: 53px;
+    height: 28px;
+    background: url('../images/abstract.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+
+.circle-text:before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+
+}
+
+#hero .circle-text:before {
+    background-image: url('../images/arrow-down-white.svg');
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#service .circle-text:before {
+    background-image: url('../images/arrow-down.svg');
+    left: 49%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-150deg);
+}
+
+#work .circle-text:before,
+#blog .circle-text:before {
+    background-image: url('../images/arrow-right.svg');
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#blog .read-more:hover {
+    @apply text-green-1;
+}
+
+#blog .read-more:hover svg {
+    transform: rotate(-45deg);
+    transition: .5s;
+}
+
+#blog .read-more:hover svg path {
+    fill: #016170;
+}
+
+.swiper {
+    min-height: 360px;
+}
+
+.swiper-button-prev {
+    left: -80px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    #hero h1::after {
+        width: 136px;
+        height: 70px;
+        right: 180px;
+        bottom: 20px;
+    }
+
+    #hero h1 span::before {
+        top: -8px;
+        left: -21px;
+    }
+
+    #hero .circle-text:before {
+        left: 50.8%;
+    }
+
+    #service .circle-text:before {
+        left: 12%;
+    }
+
+    #work .circle-text:before {
+        left: unset;
+        right: 4%;
+    }
+}   
+
+@media only screen and (min-width: 768px) {
+    .dropdown ul li.active,
+.dropdown ul li:hover {
+    @apply opacity-100 border-b-0 border-transparent;
+    transition: .5s
+}
+    .circle-text:before {
+        width: 48px;
+        height: 48px;
+    }
+
+    #hero .circle-text:before {
+        left: 50%;
+    }
+
+    .swiper-slide-active {
+        @apply bg-black-1 !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #hero h1 span::before {
+        top: -6px;
+        left: -11px;
+        
+    }
+
+    #hero h1::after {
+        right: 64px;
+        bottom: 24px;
+    
+    }
+
+    #service .circle-text:before {
+        left: 50%;
+    }
+
+    #work .circle-text:before {
+        top: 50%;
+        left: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    #hero h1::after {
+        width: 32px;
+        right: 10px;
+        bottom: 5px;
+    }
+    .swiper {
+        min-height: 420px;
+    }
 }
