@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#016170">
+    <meta name="description" content="lorem">
     <title>Digital Agency</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
@@ -17,6 +17,22 @@
 </head>
 
 <body class="bg-white-2 font-nunito-sans">
+    <!-- START PRELOAD PAGE-->
+    <div id="preload" class="fixed inset-0 flex justify-center items-center bg-green-1 text-white-1 z-50">
+        <div class="border border-white-1 rounded-full p-6">
+            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M51.3687 64.9594L38.9412 28.7757C38.5293 27.6085 38.5979 26.3039 39.2845 25.2054V25.1367H31.5946C32.2812 26.2353 32.4186 27.6085 32.0066 28.8443L19.5105 64.9594C19.3732 65.5087 19.0986 65.9206 18.8239 66.3326L18 67.4998H25.2779C24.866 66.3326 24.7973 65.0967 25.2093 63.9295L31.114 46.9019C35.9514 45.901 41.6018 41.7524 41.6018 41.7524L49.1715 63.9295C49.5148 65.0967 49.5148 66.3326 49.0342 67.4998H52.8792L52.0553 66.3326C51.7806 65.9206 51.506 65.5087 51.3687 64.9594ZM31.6633 45.1854L37.2247 29.1876L41.6018 41.7524C37.5875 44.3929 35.3966 45.2986 31.6633 45.1854Z"
+                    fill="#FFFFFC" />
+                <path
+                    d="M31.1141 4.49988H18.5493C19.2359 5.6671 19.5792 6.97164 19.5792 8.27617V43.0867C19.5792 44.3912 19.2359 45.6958 18.5493 46.863H31.1141C42.7176 46.7943 52.1926 37.3193 52.1926 25.6471C52.1926 14.0436 42.7176 4.56854 31.1141 4.49988ZM31.0454 45.0778H24.7974V6.28504H31.0454C41.7563 6.28504 46.9745 15.0048 46.9745 25.6471C46.9745 36.358 41.7563 45.0778 31.0454 45.0778Z"
+                    fill="#FFFFFC" />
+            </svg>
+
+        </div>
+    </div>
+    <!-- END PRELOAD PAGE-->
+
     <!-- START NAVBAR -->
     <nav
         class="flex items-center justify-between bg-green-1 border-b border-b-white-1 py-3 px-4 text-white-1 md:px-12 lg:py-9 lg:px-28">
@@ -42,7 +58,8 @@
 
             </button>
 
-            <div class="dropdown hidden fixed bg-black-1 left-0 right-0 px-7 py-3.75 md:block md:static md:bg-transparent md:p-0">
+            <div
+                class="dropdown fixed bg-black-1 w-full inset-0 px-7 py-3.75 z-20 transition duration-500 transform translate-x-full md:transform-none md:block md:static md:bg-transparent md:p-0">
                 <button type="button" class="md:hidden">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -65,7 +82,9 @@
     <!-- START HERO -->
     <section id="hero" class="bg-green-1 h-42rem px-4 text-white-1 text-center md:px-20">
         <div class="relative top-16 lg:top-12">
-            <h1 class="font-wagon-bold text-2x md:text-5xl md:tracking-wide md:leading-72px lg:text-7xl lg:leading-98px">Digital <span>Agency</span>
+            <h1
+                class="font-wagon-bold text-2x md:text-5xl md:tracking-wide md:leading-72px lg:text-7xl lg:leading-98px">
+                Digital <span>Agency</span>
                 With <br /> Solid Design</h1>
             <p class="my-4 lg:text-lg">We provide various services to make your business grow and get bigger. Your
                 satisfaction is our first
@@ -77,7 +96,9 @@
                     fill="#FFFFFC" />
             </svg>
 
-            <a href="#" class="circle-text relative flex justify-center mt-10 text-xs md:text-lg lg:text-2xl lg:mt-8">Let's explore
+            <a href="#"
+                class="circle-text relative flex justify-center mt-10 text-xs md:text-lg lg:text-2xl lg:mt-8">Let's
+                explore
                 the creative
                 work.</a>
         </div>
@@ -94,7 +115,7 @@
                 satisfaction is our first
                 priority.</p>
 
-            <a href="#" class="circle-text relative hidden mt-10 lg:flex">Click to see details, see our work more</a>
+            <a href="#" class="circle-text relative hidden mt-10 lg:flex">Click to see details, see our work more.</a>
         </div>
 
         <div class="mt-16 space-y-8 md:flex md:flex-wrap md:space-y-0 lg:w-1/2 lg:mt-0">
@@ -175,8 +196,8 @@
         </div>
 
         <div class="flex flex-col mt-10 mb-8 md:flex-row">
-            <div class="mb-8 md:w-3/5 md:flex md:flex-col md:bg-yellow-1 md:p-6 md:mb-0">
-                <img class="object-cover md:w-full md:flex-1" src="./assets/images/work-1.png" alt="Work 1" width="342"
+            <div class="mb-8 md:w-3/5 md:flex md:flex-col md:bg-yellow-1 md:p-10 md:mb-0">
+                <img class="object-cover md:w-full lg:h-40rem" src="./assets/images/work-1.png" alt="Work 1" width="342"
                     height="300">
 
                 <div class="hidden mt-4 justify-between items-center md:flex">
@@ -185,11 +206,11 @@
                 </div>
             </div>
 
-            <div class="space-y-8 md:w-2/5 md:pl-8">
-                <img class="block object-cover md:w-full" src="./assets/images/work-3.png" alt="Work 2" width="342"
-                    height="300">
-                <img class="block object-cover md:w-full" src="./assets/images/work-2.png" alt="Work 3" width="342"
-                    height="300">
+            <div class="space-y-8 md:flex md:flex-col md:w-2/5 md:pl-8">
+                <img class="block object-cover md:w-full md:h-full" src="./assets/images/work-3.png" alt="Work 2"
+                    width="342" height="300">
+                <img class="block object-cover md:w-full md:h-full" src="./assets/images/work-2.png" alt="Work 3"
+                    width="342" height="300">
             </div>
         </div>
 
@@ -267,15 +288,19 @@
             <div class="swiper-button absolute bottom-8 right-0">
                 <div class="swiper-button-prev">
                     <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.375 7.875L20.2519 9.70331L10.3031 19.6875H36.75V22.3125H10.3031L20.2519 32.2521L18.375 34.125L5.25 21L18.375 7.875Z" fill="#FFFFFC"/>
-                        </svg>
-                        
+                        <path
+                            d="M18.375 7.875L20.2519 9.70331L10.3031 19.6875H36.75V22.3125H10.3031L20.2519 32.2521L18.375 34.125L5.25 21L18.375 7.875Z"
+                            fill="#FFFFFC" />
+                    </svg>
+
                 </div>
                 <div class="swiper-button-next">
                     <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.625 7.875L21.7481 9.70331L31.6969 19.6875H5.25V22.3125H31.6969L21.7481 32.2521L23.625 34.125L36.75 21L23.625 7.875Z" fill="#FFFFFC"/>
-                        </svg>
-                        
+                        <path
+                            d="M23.625 7.875L21.7481 9.70331L31.6969 19.6875H5.25V22.3125H31.6969L21.7481 32.2521L23.625 34.125L36.75 21L23.625 7.875Z"
+                            fill="#FFFFFC" />
+                    </svg>
+
                 </div>
             </div>
         </div>
@@ -423,7 +448,9 @@
                 <div class="text-xs space-y-2">
                     <p class="opacity-60">Copyright © 2022 Dezign UI Template.</p>
                     <p class="opacity-60">All rights reserved</p>
-                    <p class="opacity-60">UI Engineer: <a class="underline" href="https://www.linkedin.com/in/muhammad-arief-nugraha/" target="_blank">Muhammad Arief Nugraha</a></p>
+                    <p class="opacity-60">UI Engineer: <a class="underline"
+                            href="https://www.linkedin.com/in/muhammad-arief-nugraha/" target="_blank">Muhammad Arief
+                            Nugraha</a></p>
                 </div>
 
                 <div class="flex space-x-4">
@@ -507,13 +534,21 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/circletype.min.js"></script>
     <script>
+        // CHECK IF PAGE ALREADY LOAD OR NOT
+        let checkInterval = setInterval(() => {
+            if(document.readyState === 'complete') {
+                document.getElementById('preload').classList.add('transform', '-translate-x-full', 'transition', 'duration-1000');
+                clearInterval(checkInterval)
+            }
+        }, 1000);
+
         // CIRCLE TEXT
         const circleText = document.querySelectorAll('.circle-text');
 
         circleText.forEach(text => {
             let circle = new CircleType(text);
             circle.forceWidth(true);
-            text.querySelector('div').style.animation = 'circleAnim 5s linear infinite'
+            text.querySelector('div').style.animation = 'circleAnim 30s linear infinite'
         });
 
         // CAROUSEL
@@ -528,7 +563,7 @@
                 992: {
                     slidesPerView: 3,
                     spaceBetween: 38
-                }, 
+                },
                 450: {
                     slidesPerView: 2,
                     spaceBetween: 38
@@ -539,6 +574,21 @@
                 pauseOnMouseEnter: true
             }
         });
+
+        // HANDLE DROPDOWN MENU NAVBAR
+        let dropdownBtn = document.querySelector('nav button');
+        let dropdown = document.querySelector('nav .dropdown');
+        let closeDropdown = document.querySelector('nav .dropdown button');
+        dropdownBtn.addEventListener('click', function () {
+            dropdown.classList.remove('translate-x-full');
+            dropdown.classList.add('translate-x-0')
+        });
+
+        closeDropdown.addEventListener('click', function () {
+            dropdown.classList.add('translate-x-full');
+            dropdown.classList.remove('translate-x-0')
+        })
+
     </script>
 </body>
 
